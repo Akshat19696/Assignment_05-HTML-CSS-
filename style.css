@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #111827;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: larger;
+}
+header img {
+  display: none;
+}
+nav ul {
+  display: flex;
+  width: 280px;
+  justify-content: space-around;
+  margin-top: 20px;
+  list-style: none;
+}
+nav button {
+  width: 70px;
+  height: 30px;
+  padding: 1px 0.5px;
+  margin-top: 14px;
+  background-color: #6464e0;
+  border-radius: 12px;
+  color: azure;
+  font-size: large;
+}
+nav ul li a {
+  text-decoration: none;
+  color: ghostwhite;
+  word-spacing: normal;
+  letter-spacing: normal;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-section img {
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+.left-section p,
+h2,
+span {
+  color: floralwhite;
+}
+.right-section img {
+  width: 400px;
+  height: 400px;
+}
+.left-section {
+  line-height: 25px;
+  margin-right: 20px;
+}
+main .center-section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  text-decoration: underline blue 5px;
+}
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 30%;
+  margin-left: 36%;
+}
+.project-list .project {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.project-list .project img {
+  height: 215px;
+  width: 215px;
+}
+.project-list .project p {
+  color: azure;
+  text-align: center;
+}
+footer .bottom h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: underline blue 5px;
+  margin-top: 2%;
+}
+footer .images {
+  display: flex;
+  justify-content:center;
+  column-gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+footer .images img {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+@media (max-width: 650px) {
+  header nav {
+    display: none;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left-section span {
+    display: block;
+  }
+  .left-section p,
+  h2,
+  span {
+    text-align: center;
+  }
+  header img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  .left-section img {
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+  }
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+  }
+  .project-list .project p {
+    text-align: center;
+    margin-left: 70px;
+  }
+}
